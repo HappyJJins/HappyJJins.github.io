@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on �ظ��� | Developer Blog</title>
+    <title>Tags on JJins&#39; Happy Virus | Developer Diary</title>
     <link>https://HappyJJins.github.io/tags/</link>
-    <description>Recent content in Tags on �ظ��� | Developer Blog</description>
+    <description>Recent content in Tags on JJins&#39; Happy Virus | Developer Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 10:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://HappyJJins.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>data analysis</title>
       <link>https://HappyJJins.github.io/tags/data-analysis/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Sun, 31 May 2020 10:07:47 +0600</pubDate>
       
       <guid>https://HappyJJins.github.io/tags/data-analysis/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>python</title>
       <link>https://HappyJJins.github.io/tags/python/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Sun, 31 May 2020 10:07:47 +0600</pubDate>
       
       <guid>https://HappyJJins.github.io/tags/python/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>tf-idf</title>
       <link>https://HappyJJins.github.io/tags/tf-idf/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Sun, 31 May 2020 10:07:47 +0600</pubDate>
       
       <guid>https://HappyJJins.github.io/tags/tf-idf/</guid>
       <description></description>

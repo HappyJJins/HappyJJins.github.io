@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on �ظ��� | Developer Blog</title>
+    <title>Categories on JJins&#39; Happy Virus | Developer Diary</title>
     <link>https://HappyJJins.github.io/categories/</link>
-    <description>Recent content in Categories on �ظ��� | Developer Blog</description>
+    <description>Recent content in Categories on JJins&#39; Happy Virus | Developer Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 10:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://HappyJJins.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Data analysis -Python</title>
       <link>https://HappyJJins.github.io/categories/data-analysis-python/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Sun, 31 May 2020 10:07:47 +0600</pubDate>
       
       <guid>https://HappyJJins.github.io/categories/data-analysis-python/</guid>
       <description></description>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>data analysis on �ظ��� | Developer Blog</title>
+    <title>data analysis on JJins&#39; Happy Virus | Developer Diary</title>
     <link>https://HappyJJins.github.io/tags/data-analysis/</link>
-    <description>Recent content in data analysis on �ظ��� | Developer Blog</description>
+    <description>Recent content in data analysis on JJins&#39; Happy Virus | Developer Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 29 Oct 2019 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 10:07:47 +0600</lastBuildDate>
     
 	<atom:link href="https://HappyJJins.github.io/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>TF-IDF에 대한 쉬운 설명</title>
       <link>https://HappyJJins.github.io/blog/post1/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <pubDate>Sun, 31 May 2020 10:07:47 +0600</pubDate>
       
       <guid>https://HappyJJins.github.io/blog/post1/</guid>
       <description>TF-IDF  TF-IDF(Term Frequency – Inverse Document Frequency)는 정보검색론에서 흔하게 접하는 가중치를 구하는 알고리즘 ElasticSearch나 Lucene에서 tf-idf는 검색 결과에 scoring를 하는 데 사용 수식은 다음과 같다.</description>
