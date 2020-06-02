@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>화상회의 on JJins&#39; Happy Virus | Developer Diary</title>
+    <link>https://HappyJJins.github.io/tags/%ED%99%94%EC%83%81%ED%9A%8C%EC%9D%98/</link>
+    <description>Recent content in 화상회의 on JJins&#39; Happy Virus | Developer Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://HappyJJins.github.io/tags/%ED%99%94%EC%83%81%ED%9A%8C%EC%9D%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IT, 양날의 검이 되는 세상</title>
+      <link>https://HappyJJins.github.io/blog/post3/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://HappyJJins.github.io/blog/post3/</guid>
+      <description>IT가 양날의 검이 되는 세상 IT가 양날의 검이 되는 세상이다. 원격근무와 화상회의가 코로나 시대에 좋을 줄만 알았더니 무조건 그렇지도 않다.</description>
+    </item>
+    
+  </channel>
+</rss>
