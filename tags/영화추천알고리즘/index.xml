@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>영화추천알고리즘 on JJins&#39; Happy Virus | Developer Diary</title>
+    <link>https://HappyJJins.github.io/tags/%EC%98%81%ED%99%94%EC%B6%94%EC%B2%9C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+    <description>Recent content in 영화추천알고리즘 on JJins&#39; Happy Virus | Developer Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://HappyJJins.github.io/tags/%EC%98%81%ED%99%94%EC%B6%94%EC%B2%9C%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>영화추천 알고리즘 01</title>
+      <link>https://HappyJJins.github.io/blog/post4/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://HappyJJins.github.io/blog/post4/</guid>
+      <description>import os, sys from google.colab import drive drive.mount(&amp;#39;/content/drive&amp;#39;) my_path = &amp;#39;/content/notebooks&amp;#39; # Colab Notebooks 안에 my_env 폴더에 패키지 저장 os.</description>
+    </item>
+    
+  </channel>
+</rss>

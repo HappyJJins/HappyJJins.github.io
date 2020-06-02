@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko-kr"><head>
+  <meta charset="utf-8">
+  <title>JJins&#39; Happy Virus | Developer Diary</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="this is meta description">
+  <meta name="author" content="JJins">
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://HappyJJins.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://HappyJJins.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://HappyJJins.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://HappyJJins.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://HappyJJins.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://HappyJJins.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://HappyJJins.github.io/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://HappyJJins.github.io"><img class="img-fluid"
+          src="https://HappyJJins.github.io/images/logo.png" alt="JJins&#39; Happy Virus | Developer Diary"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/hajin.jeong.14/"><i class="ti-facebook"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/jjin_jjins__/"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/HappyJJins/HappyJJins.github.io"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://HappyJJins.github.io"><img class="img-fluid"
+            src="https://HappyJJins.github.io/images/logo.png" alt="JJins&#39; Happy Virus | Developer Diary"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://HappyJJins.github.io/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://HappyJJins.github.io/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://HappyJJins.github.io/contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://HappyJJins.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="/categories/%ec%a7%80%ec%8b%9d-%ec%8c%93%ea%b8%b0"
+          class="text-primary">지식 쌓기</a>
+        
+        <h2>영화추천 알고리즘 01</h2>
+        <div class="mb-3 post-meta">
+          <span>By JJins</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>02 June 2020</span>
+          
+        </div>
+        
+        <img src="https://HappyJJins.github.io/images/featured-post/post4/post4.png" class="img-fluid w-100 mb-4" alt="영화추천 알고리즘 01">
+        
+        <div class="content mb-5">
+          <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os<span style="color:#f92672">,</span> sys
+<span style="color:#f92672">from</span> google.colab <span style="color:#f92672">import</span> drive
+drive<span style="color:#f92672">.</span>mount(<span style="color:#e6db74">&#39;/content/drive&#39;</span>)
+
+my_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/content/notebooks&#39;</span>
+<span style="color:#75715e"># Colab Notebooks 안에 my_env 폴더에 패키지 저장</span>
+os<span style="color:#f92672">.</span>symlink(<span style="color:#e6db74">&#39;/content/drive/My Drive/Colab Notebooks/my_env&#39;</span>, my_path)
+sys<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">0</span>, my_path)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#960050;background-color:#1e0010">!</span>pip install scikit<span style="color:#f92672">-</span>surprise
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%</span>matplotlib inline
+<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
+<span style="color:#f92672">from</span> scipy <span style="color:#f92672">import</span> stats
+<span style="color:#f92672">from</span> ast <span style="color:#f92672">import</span> literal_eval
+<span style="color:#f92672">from</span> sklearn.feature_extraction.text <span style="color:#f92672">import</span> TfidfVectorizer, CountVectorizer
+<span style="color:#f92672">from</span> sklearn.metrics.pairwise <span style="color:#f92672">import</span> linear_kernel, cosine_similarity
+<span style="color:#f92672">from</span> nltk.stem.snowball <span style="color:#f92672">import</span> SnowballStemmer
+<span style="color:#f92672">from</span> nltk.stem.wordnet <span style="color:#f92672">import</span> WordNetLemmatizer
+<span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> wordnet
+<span style="color:#f92672">from</span> surprise <span style="color:#f92672">import</span> Reader, Dataset, SVD
+<span style="color:#f92672">from</span> surprise.model_selection <span style="color:#f92672">import</span> cross_validate
+
+<span style="color:#f92672">import</span> warnings; warnings<span style="color:#f92672">.</span>simplefilter(<span style="color:#e6db74">&#39;ignore&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span> read_csv(<span style="color:#e6db74">&#39;/content/drive/My Drive/Colab Notebooks/MovieRcmmd/data/data/movies_metadata.csv&#39;</span>)
+md<span style="color:#f92672">.</span>head()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md[<span style="color:#e6db74">&#39;genres&#39;</span>][<span style="color:#ae81ff">0</span>] <span style="color:#75715e"># 각 행들의 구조가 &#34;{&#39;id&#39;:_,&#39;name&#39;:&#39;_&#39;},{&#39;id&#39;;_,&#39;name&#39;:&#39;_&#39;}, ,,,&#34;</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(type(md[<span style="color:#e6db74">&#39;genres&#39;</span>][<span style="color:#ae81ff">0</span>])) <span style="color:#75715e"># dict들이 str으로 묶여있음</span>
+md[<span style="color:#e6db74">&#39;genres&#39;</span>]<span style="color:#f92672">.</span>apply(literal_eval) <span style="color:#75715e">#[{dict},{dict}] &lt;- str을 list로 바꿔줌</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#각 영화 장르의 이름을 추출해 list 시켜줌</span>
+md[<span style="color:#e6db74">&#39;genres&#39;</span>] <span style="color:#f92672">=</span> md[<span style="color:#e6db74">&#39;genres&#39;</span>]<span style="color:#f92672">.</span>fillna(<span style="color:#e6db74">&#39;[]&#39;</span>)<span style="color:#f92672">.</span>apply(literal_eval)<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : [i[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x] <span style="color:#66d9ef">if</span> isinstance(x, list) <span style="color:#66d9ef">else</span> [])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md[<span style="color:#e6db74">&#39;genres&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># eval(expression, globals=None, locals=none), 내장함수</span>
+<span style="color:#75715e"># expression 인자에 string 값을 넣으면 해당 값을 그대로 실행하여 결과를 출력</span>
+expr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;10 + 10&#34;</span>
+<span style="color:#66d9ef">print</span>(type(expr))
+<span style="color:#66d9ef">print</span>(eval(expr))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#ast.literal_eval(node_or_string), AST module에서 제공하는 함수</span>
+<span style="color:#75715e">#문자 그대로 evaluate 실행하는 함수</span>
+<span style="color:#f92672">import</span> ast
+str_dict <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{&#39;a&#39;:3,&#39;b&#39;:5}&#34;</span>
+<span style="color:#66d9ef">print</span>(type(str_dict))
+convert_dict<span style="color:#f92672">=</span> ast<span style="color:#f92672">.</span>literal_eval(str_dict)
+<span style="color:#66d9ef">print</span>(convert_dict[<span style="color:#e6db74">&#39;a&#39;</span>])
+<span style="color:#66d9ef">print</span>(convert_dict[<span style="color:#e6db74">&#39;b&#39;</span>])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#literal_eval은 ValueError를 발생시킬 수 있다.</span>
+ast<span style="color:#f92672">.</span>literal_eval(<span style="color:#e6db74">&#34;10*2&#34;</span>)
+<span style="color:#75715e">#literal_eval은 python의 기본 자료형 정도만 evaluate가 가능하도록 지원. eval과 비교해 훨씬 엄격하기 때문에 결과적으로 안전을 보장.</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">type(md[<span style="color:#e6db74">&#39;vote_count&#39;</span>][<span style="color:#ae81ff">0</span>]) <span style="color:#75715e">#vote_count의 타입이 float</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">vote_counts <span style="color:#f92672">=</span> md[md[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>) <span style="color:#75715e">#float을 int로</span>
+vote_averages <span style="color:#f92672">=</span> md[md[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+C <span style="color:#f92672">=</span> vote_averages<span style="color:#f92672">.</span>mean()
+C
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">m <span style="color:#f92672">=</span> vote_counts<span style="color:#f92672">.</span>quantile(<span style="color:#ae81ff">0.95</span>)
+m
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md[<span style="color:#e6db74">&#39;year&#39;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>to_datetime(md[<span style="color:#e6db74">&#39;release_date&#39;</span>], errors<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;coerce&#39;</span>)<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : str(x)<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;-&#39;</span>)[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">if</span> x <span style="color:#f92672">!=</span> np<span style="color:#f92672">.</span>nan <span style="color:#66d9ef">else</span> np<span style="color:#f92672">.</span>nan)
+<span style="color:#75715e"># error=&#39;coerce&#39;</span>
+<span style="color:#75715e"># 날짜로 된 문자열이 아니라 문자로 된 문자열인 경우 파싱할 수 없다는 ValueError가 발생하는 것을 방지하기 위해 &#39;coerce&#39;옵션 추가</span>
+<span style="color:#75715e"># 파싱할 수 없는 문자열은 &#39;NaN&#39;으로 강제 변환</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md[<span style="color:#e6db74">&#39;year&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">qualified <span style="color:#f92672">=</span> md[(md[<span style="color:#e6db74">&#39;vote_count&#39;</span>] <span style="color:#f92672">&gt;=</span> m) <span style="color:#f92672">&amp;</span> (md[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>notnull()) <span style="color:#f92672">&amp;</span> (md[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>notnull())][[<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;year&#39;</span>, <span style="color:#e6db74">&#39;vote_count&#39;</span>, <span style="color:#e6db74">&#39;vote_average&#39;</span>, <span style="color:#e6db74">&#39;popularity&#39;</span>, <span style="color:#e6db74">&#39;genres&#39;</span>]]
+qualified[<span style="color:#e6db74">&#39;vote_count&#39;</span>] <span style="color:#f92672">=</span> qualified[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+qualified[<span style="color:#e6db74">&#39;vote_average&#39;</span>] <span style="color:#f92672">=</span> qualified[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+qualified<span style="color:#f92672">.</span>shape <span style="color:#75715e">#(행 수, 열 수)</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">weighted_rating</span>(x):
+  v <span style="color:#f92672">=</span> x[<span style="color:#e6db74">&#39;vote_count&#39;</span>]
+  R <span style="color:#f92672">=</span> x[<span style="color:#e6db74">&#39;vote_average&#39;</span>]
+  <span style="color:#66d9ef">return</span> (v<span style="color:#f92672">/</span>(v<span style="color:#f92672">+</span>m)<span style="color:#f92672">*</span>R)<span style="color:#f92672">+</span>(m<span style="color:#f92672">/</span>(m<span style="color:#f92672">+</span>v)<span style="color:#f92672">*</span>C) <span style="color:#75715e"># Weighted Rating(WR)</span>
+<span style="color:#75715e"># v is the number of votes for the movie</span>
+<span style="color:#75715e"># m is the minimum votes required to be listed in the chart</span>
+<span style="color:#75715e"># R is the average rating of the movie</span>
+<span style="color:#75715e"># C is the mean vote across the whole report</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">qualified[<span style="color:#e6db74">&#39;wr&#39;</span>] <span style="color:#f92672">=</span> qualified<span style="color:#f92672">.</span>apply(weighted_rating, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">qualified <span style="color:#f92672">=</span> qualified<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#39;wr&#39;</span>, ascending<span style="color:#f92672">=</span>False)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">250</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">qualified[<span style="color:#e6db74">&#39;wr&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">qualified<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">15</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : pd<span style="color:#f92672">.</span>Series(x[<span style="color:#e6db74">&#39;genres&#39;</span>]), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : pd<span style="color:#f92672">.</span>Series(x[<span style="color:#e6db74">&#39;genres&#39;</span>]), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>stack()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> md<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x : pd<span style="color:#f92672">.</span>Series(x[<span style="color:#e6db74">&#39;genres&#39;</span>]), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>stack()<span style="color:#f92672">.</span>reset_index(level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, drop<span style="color:#f92672">=</span>True)
+<span style="color:#75715e"># 인덱스 1단계 제거(첫번째 열)</span>
+s
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;genre&#39;</span>
+gen_md <span style="color:#f92672">=</span> md<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;genres&#39;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>join(s)
+gen_md
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build_chart</span>(genre, percentile<span style="color:#f92672">=</span><span style="color:#ae81ff">0.86</span>):
+  df <span style="color:#f92672">=</span> gen_md[gen_md[<span style="color:#e6db74">&#39;genre&#39;</span>] <span style="color:#f92672">==</span> genre]
+  vote_counts <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+  vote_averages <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+  C <span style="color:#f92672">=</span> vote_averages<span style="color:#f92672">.</span>mean()
+  m <span style="color:#f92672">=</span> vote_counts<span style="color:#f92672">.</span>quantile(percentile)
+
+<span style="color:#75715e"># 여러 개의 칼럼 데이터 추추 시 대괄호 두번[[]]</span>
+  qualified <span style="color:#f92672">=</span> df[(df[<span style="color:#e6db74">&#39;vote_count&#39;</span>] <span style="color:#f92672">&gt;=</span> m) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>notnull()) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>notnull())][[<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;year&#39;</span>, <span style="color:#e6db74">&#39;vote_count&#39;</span>, <span style="color:#e6db74">&#39;vote_average&#39;</span>, <span style="color:#e6db74">&#39;popularity&#39;</span>]]
+  qualified[<span style="color:#e6db74">&#39;vote_count&#39;</span>] <span style="color:#f92672">=</span> qualified[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+  qualified[<span style="color:#e6db74">&#39;vote_average&#39;</span>] <span style="color:#f92672">=</span> qualified[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+
+  qualified[<span style="color:#e6db74">&#39;wr&#39;</span>] <span style="color:#f92672">=</span> qualified<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: (x[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">/</span>(x[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">+</span>m)<span style="color:#f92672">*</span>x[<span style="color:#e6db74">&#39;vote_average&#39;</span>])<span style="color:#f92672">+</span>(m<span style="color:#f92672">/</span>(m<span style="color:#f92672">+</span>x[<span style="color:#e6db74">&#39;vote_count&#39;</span>])<span style="color:#f92672">*</span>C), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+  qualified <span style="color:#f92672">=</span> qualified<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#39;wr&#39;</span>, ascending<span style="color:#f92672">=</span>False)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">250</span>)
+
+  <span style="color:#66d9ef">return</span> qualified
+</code></pre></div><p>Top Romance Movies</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">build_chart(<span style="color:#e6db74">&#39;Romance&#39;</span>)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">15</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">links_small <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/content/drive/My Drive/Colab Notebooks/MovieRcmmd/data/data/links_small.csv&#39;</span>)
+links_small
+<span style="color:#75715e"># imdbid : internet movie data base</span>
+<span style="color:#75715e"># tmdbid : the movie data base</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">links_small <span style="color:#f92672">=</span> links_small[links_small[<span style="color:#e6db74">&#39;tmdbId&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;tmdbId&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+links_small
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 여러 개의 행 추출 시 대괄호 두 번 [[]]</span>
+md<span style="color:#f92672">.</span>loc[[<span style="color:#ae81ff">19730</span>, <span style="color:#ae81ff">29503</span>, <span style="color:#ae81ff">35587</span>]] <span style="color:#75715e">#id가 날짜 형식</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md <span style="color:#f92672">=</span> md<span style="color:#f92672">.</span>drop([<span style="color:#ae81ff">19730</span>, <span style="color:#ae81ff">29503</span>, <span style="color:#ae81ff">35587</span>])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md[<span style="color:#e6db74">&#39;id&#39;</span>] <span style="color:#f92672">=</span> md[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd <span style="color:#f92672">=</span> md[md[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#f92672">.</span>isin(links_small)]
+smd<span style="color:#f92672">.</span>shape
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd<span style="color:#f92672">.</span>loc[<span style="color:#ae81ff">1</span>][<span style="color:#e6db74">&#39;title&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd<span style="color:#f92672">.</span>loc[<span style="color:#ae81ff">1</span>][<span style="color:#e6db74">&#39;overview&#39;</span>] <span style="color:#75715e"># overview : 개요</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd<span style="color:#f92672">.</span>loc[<span style="color:#ae81ff">1</span>][<span style="color:#e6db74">&#39;tagline&#39;</span>] <span style="color:#75715e"># tagline : 광고 구호, 슬로건</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;tagline&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;tagline&#39;</span>]<span style="color:#f92672">.</span>fillna(<span style="color:#e6db74">&#39;&#39;</span>)
+smd[<span style="color:#e6db74">&#39;description&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;overview&#39;</span>] <span style="color:#f92672">+</span> smd[<span style="color:#e6db74">&#39;tagline&#39;</span>]
+smd[<span style="color:#e6db74">&#39;description&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;description&#39;</span>]<span style="color:#f92672">.</span>fillna(<span style="color:#e6db74">&#39;&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># tf-idf 인코딩 : 단어 갯수 그대로 카운트하지 않고 모든 문서에 공통적으로 들어있는 단어의 경우 문서 구별 능력이 떨어진다고 보아 가중치를 축소하는 방법</span>
+<span style="color:#75715e"># analyzer=&#39;word&#39;/&#39;char&#39;/&#39;char_wb&#39;(단어 내의 문자)</span>
+<span style="color:#75715e"># ngram_range=(min_n, max_n)</span>
+<span style="color:#75715e"># min_df=[0.0,1.0]사이의 실수. 디폴트 1, 단어장에 포함되기 위한 최소 빈도</span>
+<span style="color:#75715e"># stop_words=&#39;english&#39; : 영어용 스탑 워드 사용</span>
+tf <span style="color:#f92672">=</span> TfidfVectorizer(analyzer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;word&#39;</span>, ngram_range<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>),min_df<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, stop_words<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;english&#39;</span>)
+tfidf_matrix <span style="color:#f92672">=</span> tf<span style="color:#f92672">.</span>fit_transform(smd[<span style="color:#e6db74">&#39;description&#39;</span>])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tf<span style="color:#f92672">.</span>vocabulary_ <span style="color:#75715e"># 단어를 인덱싱, type은 dict</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tfidf_matrix<span style="color:#f92672">.</span>shape <span style="color:#75715e"># 9099개의 문장이 268124 토큰으로 표현됨</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(np<span style="color:#f92672">.</span>array(tfidf_matrix)) <span style="color:#75715e"># (m, n) xxx : 문장 m에서의 단어 n의 tfidf값</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cosine_sim <span style="color:#f92672">=</span> linear_kernel(tfidf_matrix, tfidf_matrix)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cosine_sim[<span style="color:#ae81ff">0</span>]
+<span style="color:#75715e"># 1 :첫번째 문장 자기자신과의 코사인 유사도</span>
+<span style="color:#75715e"># 0.00680476 :첫번째 문장과 두 번째 문장과의 코사인 유사도</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cosine_sim[<span style="color:#ae81ff">9098</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd <span style="color:#f92672">=</span> smd<span style="color:#f92672">.</span>reset_index()
+titles <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;title&#39;</span>]
+indices <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(smd<span style="color:#f92672">.</span>index, index<span style="color:#f92672">=</span>smd[<span style="color:#e6db74">&#39;title&#39;</span>])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">indices
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_recommendations</span>(title):
+  idx <span style="color:#f92672">=</span> indices[title] <span style="color:#75715e">#해당 title 인덱스</span>
+  sim_scores <span style="color:#f92672">=</span> list(enumerate(cosine_sim[idx])) <span style="color:#75715e">#해당 title 과 다른 영화와의 유사도 인덱싱</span>
+  <span style="color:#75715e"># (1, 0.00282712634654008) :해당 title과 1번째 영화와의 유사도가 0.002827126346...</span>
+  sim_scores <span style="color:#f92672">=</span> sorted(sim_scores, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#ae81ff">1</span>], reverse<span style="color:#f92672">=</span>True) <span style="color:#75715e">#유사도를 기준으로 내림차순으로 정렬</span>
+  sim_scores <span style="color:#f92672">=</span> sim_scores[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">31</span>] <span style="color:#75715e">#자기자신과의 유사도(1)을 제외하고, 유사도가 가장 높은 것부터 30개 추출</span>
+  movie_indices <span style="color:#f92672">=</span> [i[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> sim_scores] <span style="color:#75715e">#유사도 상위30개 영화에 대한 인덱스</span>
+  <span style="color:#66d9ef">return</span> titles<span style="color:#f92672">.</span>iloc[movie_indices]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">list(enumerate(cosine_sim[indices[<span style="color:#e6db74">&#39;The Godfather&#39;</span>]]))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sorted(list(enumerate(cosine_sim[indices[<span style="color:#e6db74">&#39;The Godfather&#39;</span>]])), key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#ae81ff">1</span>], reverse<span style="color:#f92672">=</span>True)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">get_recommendations(<span style="color:#e6db74">&#39;The Godfather&#39;</span>)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">get_recommendations(<span style="color:#e6db74">&#39;The Dark Knight&#39;</span>)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</code></pre></div><p>Metadata Based Recommender</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">credits <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/content/drive/My Drive/Colab Notebooks/MovieRcmmd/data/data/credits.csv&#39;</span>)
+keywords <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/content/drive/My Drive/Colab Notebooks/MovieRcmmd/data/data/keywords.csv&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">keywords[<span style="color:#e6db74">&#39;id&#39;</span>] <span style="color:#f92672">=</span> keywords[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+credits[<span style="color:#e6db74">&#39;id&#39;</span>] <span style="color:#f92672">=</span> credits[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+md[<span style="color:#e6db74">&#39;id&#39;</span>] <span style="color:#f92672">=</span> md[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">keywords<span style="color:#f92672">.</span>head() <span style="color:#75715e"># 각 영화의 keywords 정리</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">credits<span style="color:#f92672">.</span>head()
+<span style="color:#75715e"># cast :주연들에 대한 설명(character, name, gender,,)</span>
+<span style="color:#75715e"># crew : 감독, 작가 등에 대한 설명</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md<span style="color:#f92672">.</span>shape
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">md <span style="color:#f92672">=</span> md<span style="color:#f92672">.</span>merge(credits, on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;id&#39;</span>)
+md <span style="color:#f92672">=</span> md<span style="color:#f92672">.</span>merge(keywords, on<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;id&#39;</span>)
+md<span style="color:#f92672">.</span>head()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd <span style="color:#f92672">=</span> md[md[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#f92672">.</span>isin(links_small)]
+smd<span style="color:#f92672">.</span>shape
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;cast&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;cast&#39;</span>]<span style="color:#f92672">.</span>apply(literal_eval)
+smd[<span style="color:#e6db74">&#39;crew&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;crew&#39;</span>]<span style="color:#f92672">.</span>apply(literal_eval)
+smd[<span style="color:#e6db74">&#39;keywords&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]<span style="color:#f92672">.</span>apply(literal_eval)
+smd[<span style="color:#e6db74">&#39;cast_size&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;cast&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: len(x))
+smd[<span style="color:#e6db74">&#39;crew_size&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;crew&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: len(x))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_director</span>(x):
+  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x:
+    <span style="color:#66d9ef">if</span> i[<span style="color:#e6db74">&#39;job&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Director&#39;</span>:
+      <span style="color:#66d9ef">return</span> i[<span style="color:#e6db74">&#39;name&#39;</span>]
+  <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>nan
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;director&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;crew&#39;</span>]<span style="color:#f92672">.</span>apply(get_director)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;cast&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;cast&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: [i[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x] <span style="color:#66d9ef">if</span> isinstance(x, list) <span style="color:#66d9ef">else</span> [])
+smd[<span style="color:#e6db74">&#39;cast&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;cast&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: x[:<span style="color:#ae81ff">3</span>] <span style="color:#66d9ef">if</span> len(x) <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">3</span> <span style="color:#66d9ef">else</span> x) <span style="color:#75715e">#주연이름 세자리까지만</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;keywords&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: [i[<span style="color:#e6db74">&#39;name&#39;</span>] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x] <span style="color:#66d9ef">if</span> isinstance(x, list) <span style="color:#66d9ef">else</span> [])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;cast&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;cast&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: [str<span style="color:#f92672">.</span>lower(i<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34; &#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>)) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x]) <span style="color:#75715e"># 주연이름 붙여쓰기, 소문자로</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;cast&#39;</span>]<span style="color:#f92672">.</span>head()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;director&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;director&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;str&#39;</span>)<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: str<span style="color:#f92672">.</span>lower(x<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34; &#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)))
+smd[<span style="color:#e6db74">&#39;director&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;director&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: [x, x, x])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;director&#39;</span>]
+</code></pre></div><p>Keywords</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> smd<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: pd<span style="color:#f92672">.</span>Series(x[<span style="color:#e6db74">&#39;keywords&#39;</span>]), axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>stack()<span style="color:#f92672">.</span>reset_index(level<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, drop<span style="color:#f92672">=</span>True)
+s<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;keyword&#39;</span>
+s
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>value_counts()
+s[:<span style="color:#ae81ff">5</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> s[s <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">stemmer <span style="color:#f92672">=</span> SnowballStemmer(<span style="color:#e6db74">&#39;english&#39;</span>) <span style="color:#75715e">#접사 제거, 명사 추출</span>
+stemmer<span style="color:#f92672">.</span>stem(<span style="color:#e6db74">&#39;dogs&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">filter_keywords</span>(x):
+  words <span style="color:#f92672">=</span> []
+  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x:
+    <span style="color:#66d9ef">if</span> i <span style="color:#f92672">in</span> s:
+      words<span style="color:#f92672">.</span>append(i)
+  <span style="color:#66d9ef">return</span> words
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;keywords&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]<span style="color:#f92672">.</span>apply(filter_keywords)
+smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;keywords&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: [stemmer<span style="color:#f92672">.</span>stem(i) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x])
+smd[<span style="color:#e6db74">&#39;keywords&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: [str<span style="color:#f92672">.</span>lower(i<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34; &#34;</span>, <span style="color:#e6db74">&#34;&#34;</span>)) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;keywords&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd[<span style="color:#e6db74">&#39;soup&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;keywords&#39;</span>] <span style="color:#f92672">+</span> smd[<span style="color:#e6db74">&#39;cast&#39;</span>] <span style="color:#f92672">+</span> smd[<span style="color:#e6db74">&#39;director&#39;</span>] <span style="color:#f92672">+</span> smd[<span style="color:#e6db74">&#39;genres&#39;</span>]
+smd[<span style="color:#e6db74">&#39;soup&#39;</span>] <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;soup&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: <span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span>join(x))
+smd[<span style="color:#e6db74">&#39;soup&#39;</span>]
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count <span style="color:#f92672">=</span> CountVectorizer(analyzer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;word&#39;</span>, ngram_range<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>), min_df<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, stop_words<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;english&#39;</span>)
+count_matrix <span style="color:#f92672">=</span> count<span style="color:#f92672">.</span>fit_transform(smd[<span style="color:#e6db74">&#39;soup&#39;</span>])
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">count_matrix<span style="color:#f92672">.</span>shape <span style="color:#75715e"># 9212개의 문장이 100304 토큰으로 표현</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(np<span style="color:#f92672">.</span>array(count_matrix))
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">cosine_sim <span style="color:#f92672">=</span> cosine_similarity(count_matrix, count_matrix)
+cosine_sim
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">smd <span style="color:#f92672">=</span> smd<span style="color:#f92672">.</span>reset_index()
+titles <span style="color:#f92672">=</span> smd[<span style="color:#e6db74">&#39;title&#39;</span>]
+indices <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(smd<span style="color:#f92672">.</span>index, index<span style="color:#f92672">=</span>smd[<span style="color:#e6db74">&#39;title&#39;</span>])
+indices
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">get_recommendations(<span style="color:#e6db74">&#39;The Dark Knight&#39;</span>)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">get_recommendations(<span style="color:#e6db74">&#39;Mean Girls&#39;</span>)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+</code></pre></div><p>Popularity and Ratings</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">improved_recommendations</span>(title):
+    idx <span style="color:#f92672">=</span> indices[title]
+    sim_scores <span style="color:#f92672">=</span> list(enumerate(cosine_sim[idx]))
+    sim_scores <span style="color:#f92672">=</span> sorted(sim_scores, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> x: x[<span style="color:#ae81ff">1</span>], reverse<span style="color:#f92672">=</span>True)
+    sim_scores <span style="color:#f92672">=</span> sim_scores[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">26</span>]
+    movie_indices <span style="color:#f92672">=</span> [i[<span style="color:#ae81ff">0</span>] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> sim_scores]
+    
+    movies <span style="color:#f92672">=</span> smd<span style="color:#f92672">.</span>iloc[movie_indices][[<span style="color:#e6db74">&#39;title&#39;</span>, <span style="color:#e6db74">&#39;vote_count&#39;</span>, <span style="color:#e6db74">&#39;vote_average&#39;</span>, <span style="color:#e6db74">&#39;year&#39;</span>]]
+    vote_counts <span style="color:#f92672">=</span> movies[movies[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+    vote_averages <span style="color:#f92672">=</span> movies[movies[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>notnull()][<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+    C <span style="color:#f92672">=</span> vote_averages<span style="color:#f92672">.</span>mean()
+    m <span style="color:#f92672">=</span> vote_counts<span style="color:#f92672">.</span>quantile(<span style="color:#ae81ff">0.60</span>)
+    qualified <span style="color:#f92672">=</span> movies[(movies[<span style="color:#e6db74">&#39;vote_count&#39;</span>] <span style="color:#f92672">&gt;=</span> m) <span style="color:#f92672">&amp;</span> (movies[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>notnull()) <span style="color:#f92672">&amp;</span> (movies[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>notnull())]
+    qualified[<span style="color:#e6db74">&#39;vote_count&#39;</span>] <span style="color:#f92672">=</span> qualified[<span style="color:#e6db74">&#39;vote_count&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+    qualified[<span style="color:#e6db74">&#39;vote_average&#39;</span>] <span style="color:#f92672">=</span> qualified[<span style="color:#e6db74">&#39;vote_average&#39;</span>]<span style="color:#f92672">.</span>astype(<span style="color:#e6db74">&#39;int&#39;</span>)
+    qualified[<span style="color:#e6db74">&#39;wr&#39;</span>] <span style="color:#f92672">=</span> qualified<span style="color:#f92672">.</span>apply(weighted_rating, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+    qualified <span style="color:#f92672">=</span> qualified<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#39;wr&#39;</span>, ascending<span style="color:#f92672">=</span>False)<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>)
+    <span style="color:#66d9ef">return</span> qualified
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">improved_recommendations(<span style="color:#e6db74">&#39;The Dark Knight&#39;</span>)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">improved_recommendations(<span style="color:#e6db74">&#39;Mean Girls&#39;</span>)
+</code></pre></div><p>Collaborative Filtering</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">reader <span style="color:#f92672">=</span> Reader()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ratings <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;/content/drive/My Drive/Colab Notebooks/MovieRcmmd/data/data/ratings_small.csv&#39;</span>)
+ratings<span style="color:#f92672">.</span>head()
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> Dataset<span style="color:#f92672">.</span>load_from_df(ratings[[<span style="color:#e6db74">&#39;userId&#39;</span>, <span style="color:#e6db74">&#39;movieId&#39;</span>, <span style="color:#e6db74">&#39;rating&#39;</span>]], reader) <span style="color:#75715e">#데이터셋 로딩</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">svd <span style="color:#f92672">=</span> SVD() <span style="color:#75715e"># SVD :특이값 분해 알고리즘</span>
+kf <span style="color:#f92672">=</span> KFold(n_splits <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)
+</code></pre></div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <a href="https://HappyJJins.github.io"><img src="https://HappyJJins.github.io/images/logo.png" alt="JJins&#39; Happy Virus | Developer Diary"></a>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark" href="tel:01073307487"><i
+                class="ti-mobile mr-3 text-primary"></i>01073307487</a></li>
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Daegu, Korea</li>
+          <li class="mb-3"><a class="text-dark" href="mailto:nanee9556@gmail.com"><i
+                class="ti-email mr-3 text-primary"></i>nanee9556@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.facebook.com/hajin.jeong.14/">facebook</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/jjin_jjins__/">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/HappyJJins/HappyJJins.github.io">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/data-analysis-_python">Data analysis python</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/%ec%a7%80%ec%8b%9d-%ec%8c%93%ea%b8%b0">지식 쌓기</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://HappyJJins.github.io/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://HappyJJins.github.io/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://HappyJJins.github.io/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | copyright © 2020 <a href="https://themefisher.com">Themefisher</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://HappyJJins.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://HappyJJins.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://HappyJJins.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://HappyJJins.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://HappyJJins.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://HappyJJins.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://HappyJJins.github.io/plugins/search/mark.js"></script>
+
+<script src="https://HappyJJins.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://HappyJJins.github.io/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'Your ID', 'auto');
+  ga('send', 'pageview');
+</script></body>
+</html>
