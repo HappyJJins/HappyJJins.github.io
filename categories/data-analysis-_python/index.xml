@@ -6,10 +6,19 @@
     <description>Recent content in Data analysis _Python on JJins&#39; Happy Virus | Developer Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 31 May 2020 10:07:47 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://HappyJJins.github.io/categories/data-analysis-_python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>영화 추천 알고리즘</title>
+      <link>https://HappyJJins.github.io/blog/post4/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://HappyJJins.github.io/blog/post4/</guid>
+      <description>Movies Recommender System Package를 설치하는 환경폴더(my_env)를 따로 만들어 실행할 때마다 설치할 필요 없도록 설정했습니다.</description>
+    </item>
     
     <item>
       <title>TF-IDF에 대한 쉬운 설명</title>

@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on JJins&#39; Happy Virus | Developer Diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://HappyJJins.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>영화 추천 알고리즘</title>
+      <link>https://HappyJJins.github.io/blog/post4/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://HappyJJins.github.io/blog/post4/</guid>
+      <description>Movies Recommender System Package를 설치하는 환경폴더(my_env)를 따로 만들어 실행할 때마다 설치할 필요 없도록 설정했습니다.</description>
+    </item>
     
     <item>
       <title>IT, 양날의 검이 되는 세상</title>
@@ -18,15 +27,6 @@
       
       <guid>https://HappyJJins.github.io/blog/post3/</guid>
       <description>IT가 양날의 검이 되는 세상 IT가 양날의 검이 되는 세상이다. 원격근무와 화상회의가 코로나 시대에 좋을 줄만 알았더니 무조건 그렇지도 않다.</description>
-    </item>
-    
-    <item>
-      <title>영화추천 알고리즘 01</title>
-      <link>https://HappyJJins.github.io/blog/post4/</link>
-      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://HappyJJins.github.io/blog/post4/</guid>
-      <description>import os, sys from google.colab import drive drive.mount(&amp;#39;/content/drive&amp;#39;) my_path = &amp;#39;/content/notebooks&amp;#39; # Colab Notebooks 안에 my_env 폴더에 패키지 저장 os.</description>
     </item>
     
     <item>
